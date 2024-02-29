@@ -60,7 +60,7 @@ const writeToFile = (fileName, data) => {
 // function to initialize program
 const init = () => {
   inquirer.prompt(questions)
-    .then((answers) => writeToFile("./generated/README.md", generateMarkdown(answers)))
+    .then((answers) => writeToFile(`./generated/${answers.title}-README.md`, generateMarkdown(answers)))
 };
 
 // function call to initialize program
