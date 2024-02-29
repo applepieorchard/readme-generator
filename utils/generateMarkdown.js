@@ -1,44 +1,43 @@
 // function to generate markdown for README
 const generateMarkdown = (data) => {
-  return `
-    # ${data.title}
-    
-    ## Description
-    
-    ${data.description}
+  return `# ${data.title}
+  
+  ## Description
+  
+  ${data.description}
 
-    ## Table of Contents
+  ## Table of Contents
 
-    [Installation](#installation)
-    [Usage](#usage)
-    [License](#license)
-    [Contributing](#contributing)
-    [Tests](#tests)
-    [Questions](#questions)
+  [Installation](#installation)
+  [Usage](#usage)
+  [License](#license)
+  [Contributing](#contributing)
+  [Tests](#tests)
+  [Questions](#questions)
 
-    ## Installation
+  ## Installation
 
-    ${data.installation}
+  ${data.installation}
 
-    ## Usage
+  ## Usage
 
-    ${data.usage}
+  ${data.usage}
 
-    ## License
+  ## License
 
-    This project is subject to the [${data.license}](LICENSE).
+  This project is subject to the [${data.license}](LICENSE).
 
-    ## Contributing
+  ## Contributing
 
-    ${data.contributing}
+  ${data.contributing}
 
-    ## Tests
+  ## Tests
 
-    ${data.tests}
+  ${data.tests}
 
-    ## Questions
+  ## Questions
 
-    If you have any questions you can contact me on github [@${data.github}](https://github.com/${data.github}) or email at [${data.email}](mailto:${data.email})
+  If you have any questions you can contact me on github [@${data.github}](https://github.com/${data.github}) or email at [${data.email}](mailto:${data.email})
   `;
 }
 

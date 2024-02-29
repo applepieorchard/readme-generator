@@ -54,12 +54,13 @@ const questions = [
 
 // function to write README file
 const writeToFile = (fileName, data) => {
-  fs.writeFile(fileName, data)
+  fs.writeFileSync(fileName, data)
 };
 
 // function to initialize program
 const init = () => {
-  
+  inquirer.prompt(questions)
+    .then((answers) => writeToFile(`./generated/${answers.title}-README.md`, generateMarkdown(answers)))
 };
 
 // function call to initialize program
