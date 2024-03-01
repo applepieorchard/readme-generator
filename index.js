@@ -1,5 +1,4 @@
 const fs = require("fs");
-const path = require("path");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
@@ -61,6 +60,8 @@ const writeToFile = (fileName, data) => {
 const init = () => {
   inquirer.prompt(questions)
     .then((answers) => writeToFile(`./generated/${answers.title}-README.md`, generateMarkdown(answers)))
+    .then(() => console.log("Thank you, your README has been generated and can be found in the \"generated/\" directory"))
+    .catch((err) => console.log(err))
 };
 
 // function call to initialize program
