@@ -27,7 +27,7 @@
 
   ## Contributing
 
-  If you wish to contribute to this project please find my contact details in the questions section and get in touch.
+  If you wish to contribute to this project please contact me using the information provided in the questions section.
 
   ## Tests
 
